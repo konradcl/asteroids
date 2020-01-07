@@ -1,0 +1,33 @@
+# OS
+Thumbs.db
+.DS_store
+
+# Solution
+obj
+bin
+*.userprefs
+*.user
+test-results
+
+# IDEs
+packages
+.vs
+.vscode
+.idea
+**/Assets/Plugins/Editor/JetBrains
+**/Assets/Plugins/Editor/JetBrains.meta
+
+# Unity
+Library
+Temp
+*.unitypackage
+Assembly-CSharp*.csproj
+
+# Jenny
+Jenny
+Jenny-Server
+Jenny-Server.bat
+*.userproperties
+
+# Project
+Asteroids.sln
