@@ -2,18 +2,22 @@
 
 public class GameController : MonoBehaviour
 {
-    private RootSystem _system;
+	public GameSetup gameSetup;
+	private RootSystem system;
 
-    void Start()
-    {
-        var contexts = Contexts.sharedInstance;
-        _system = new RootSystem(contexts);
-        
-        _system.Initialize();
-    }
+	void Start()
+	{
+		var contexts = Contexts.sharedInstance;
+		system = new RootSystem(contexts);
 
-    void Update()
-    {
-        _system.Execute();
-    }
+		contexts.game.SetGameSetup(gameSetup);
+
+		system.Initialize();
+	}
+
+	void Update()
+	{
+		system.Execute();
+		system.Cleanup();
+	}
 }

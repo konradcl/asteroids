@@ -22,6 +22,8 @@ Library
 Temp
 *.unitypackage
 Assembly-CSharp*.csproj
+.meta
+**/.meta
 
 # Jenny
 Jenny
